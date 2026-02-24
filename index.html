@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>영웅들의 영웅 바나바 - 온라인 성경동화책</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">📖 영웅들의 영웅, 바나바 (유스비전 둘째날 설교)</h1>
+        <button class="btn-music" id="musicToggle" aria-label="찬양" title="찬양 재생/정지">
+            ♪
+        </button>
+    </header>
+
+    <!-- 메인 콘텐츠 영역 -->
+    <main class="main-content">
+        <div class="book-container">
+            <!-- 이미지 슬라이더 -->
+            <div class="image-container">
+                <div class="image-slider" id="imageSlider">
+                    <div class="image-slide active">
+                        <img src="assets/images/cover.png" alt="성경동화 표지" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page1.png" alt="초대 교회의 영웅들 이야기" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page2.png" alt="바나바 소개" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page3.png" alt="모두가 피하는 사울" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page4.png" alt="사울에게 다가간 바나바" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page5.png" alt="도망쳤던 마가" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page6.png" alt="마가를 다시 부른 바나바" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page7.png" alt="예수님의 십자가 사랑" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/page8.png" alt="진짜 영웅이란" loading="lazy">
+                    </div>
+                    <div class="image-slide">
+                        <img src="assets/images/prayer.png" alt="기도하는 아이" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 텍스트 콘텐츠 -->
+            <div class="text-container" id="textContainer">
+                <div class="text-page active">
+                    <h2 class="page-title cover-title handwriting-text">영웅들의 영웅, 바나바</h2>
+                    <div class="page-content center-align">
+                        <p><strong>가정예배를 위한 준비:</strong> 아이를 무릎에 앉히고 편안한 분위기를 만들어주세요. 오른쪽 위 음악 버튼(♪)을 눌러 찬양을 틀어놓고 이야기
+                            여행을 시작해 봅시다.</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p><em>(아이를 눈을 맞추며 부드럽게)</em><br>
+                            우리 (아이 이름)는 '영웅'하면 누가 떠오르나요?<br>
+                            멋진 슈트를 입은 아이언맨? 아니면 힘이 센 캡틴 아메리카?</p>
+                        <p>이 영웅들은 힘은 엄청 세지만, 자기 생각만 맞다고 다투기도 해요.<br>
+                            그래서 모두가 좋아하는 <strong>진짜 팀</strong>을 만들려면 특별한 힘이 필요해요.</p>
+                        <p>그건 바로 영웅들을 '무기'가 아니라 사랑받아야 할 <strong>'사람'</strong>으로 대해주는 마음이랍니다.<br>
+                            성경에도 이렇게 차가운 마음을 싹 녹여버린 '영웅들의 영웅'이 살고 있었어요.</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>그 영웅의 이름은 구브로에서 온 <strong>'요셉'</strong>이라는 사람이었어요.<br>
+                            사람들은 덩치가 아주 크고 든든했던 요셉을 본명보다 별명으로 불렀어요.</p>
+                        <p><em>(따뜻한 미소를 지으며)</em><br>
+                            "여러분, 우리 <strong>바나바</strong>가 왔어요!"</p>
+                        <p>바나바는 <strong>'위로의 아들'</strong>이라는 뜻이에요.<br>
+                            바나바를 만나면 엉엉 울던 사람도 다시 방긋 웃고, 슬퍼하던 사람도 용기를 냈거든요.<br>
+                            심지어 도움이 필요한 친구들에게는 자기 것을 다 내어주는 아주 착한 사람이었어요.</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>어느 날 예루살렘 교회에 아무도 반가워하지 않는 손님이 왔어요.<br>
+                            바로 <strong>'사울'</strong>이라는 사람이었어요.</p>
+                        <p>얼마 전까지만 해도 사울은 예수님을 믿는 사람들을 보면 잡아다 괴롭히던 무서운 사람이었거든요.<br>
+                            <em>(깜짝 놀란 표정으로)</em> "앗, 저 사람 거짓말하는 걸 거야! 가까이 가면 안 돼!"<br>
+                            모두가 덜덜 떨며 사울을 피했어요.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>그런데 그때! 바나바가 사울에게 성큼성큼 다가가 <strong>어깨동무</strong>를 탁! 했어요.</p>
+                        <p><em>(자신감 있는 목소리로)</em><br>
+                            "여러분! 제가 보증합니다. 이 사람 진짜 변했어요. 이제 우리 편이에요!"</p>
+                        <p>아무도 피하던 사울에게 먼저 다가가 믿어준 바나바 덕분에, 사울은 교회의 가족이 될 수 있었어요.<br>
+                            그리고 나중에 이 사울은 신약성경을 반이나 쓴 위대한 <strong>'사도 바울'</strong>이 되었답니다!</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>시간이 지나 바나바는 바울과 함께 예수님을 전하러 여행을 떠났어요.<br>
+                            이번엔 어린 <strong>'마가'</strong>라는 청년도 함께였죠.</p>
+                        <p>하지만 여행이 너무 힘들었는지 마가는 중간에 몰래 집으로 <strong>도망쳐 버렸어요.</strong><br>
+                            나중에 다음 여행을 갈 때 바울은 정색하며 말했어요.<br>
+                            "한 번 도망친 사람을 어떻게 또 데려갑니까? 절대 안 됩니다!"</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>항상 "네, 맞아요" 하던 바나바도 이때만큼은 물러서지 않았어요.</p>
+                        <p><em>(단호하게)</em> "바울! 한 번 실수했다고 사람을 버릴 겁니까? 다시 기회를 줘야지요!"</p>
+                        <p>결국 바나바는 슬퍼하는 마가의 손을 꼭 잡고 따로 여행을 떠나주었어요.<br>
+                            이때의 따뜻한 위로 덕분에, 도망자였던 마가는 나중에 예수님의 말씀을 담은 <strong>'마가복음'</strong>을 쓰는 멋진 영웅이 되었어요.</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p>우리, 생각해 볼까요?<br>
+                            바나바는 어떻게 자기를 다 내어주고, 냄새나고 못난 사람들을 먼저 사랑할 수 있었을까요?</p>
+                        <p>바나바는 예수님의 이 말씀을 마음에 품고 있었거든요.<br>
+                            <em>(가슴에 손을 얹으며)</em> "인자가 온 것은 많은 사람을 위해 자기 목숨을 주려 함이니라."
+                        </p>
+                        <p>예수님이 우리를 진짜 사랑하셔서 십자가에서 모든 것을 내어주셨기 때문에,<br>
+                            바나바도 그 사랑을 배워 다른 사람들에게 베풀 수 있었던 거예요.</p>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content">
+                        <p><em>(아이를 꽉 껴안으며)</em><br>
+                            자, 따라해 볼까요? <strong>"사랑이 이긴다!"</strong></p>
+                        <p>세상을 살리는 진짜 영웅들의 초능력은 바로 <strong>'사랑'</strong>이에요.<br>
+                            힘들어하는 친구에게 먼저 다가가 위로해주고 안아주는 바나바 같은 사람이 바로 진짜 영웅이랍니다.<br>
+                            우리 (아이 이름)도 예수님의 사랑을 이웃에게 전해주는 멋진 영웅이 되어요!</p>
+                        <div class="highlight-box">
+                            <h3>📌 함께 나누는 질문</h3>
+                            <p>"(아이 이름) 주변에 위로나 사랑이 필요한 친구가 있나요? 그 친구에게 어떻게 다가갈 수 있을까요?"</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-page">
+                    <div class="page-content center-align">
+                        <div class="prayer-box">
+                            <h3>🙏 마무리 기도</h3>
+                            <p>사랑의 예수님,<br>
+                                바나바가 사울을 믿어주고, 넘어진 마가를 끝까지 안아주었던 것처럼<br>
+                                우리 마음에도 십자가의 따뜻한 사랑이 가득 채워지게 해주세요.<br>
+                                차가운 마음을 녹이고 다른 사람들을 살리는 영웅들의 영웅이 되게 해주세요.<br>
+                                우리 가족을 사랑으로 돌보시는 예수님의 이름으로 기도합니다. 아멘!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 네비게이션 버튼 -->
+        <div class="navigation">
+            <button class="nav-btn nav-prev" id="prevBtn" disabled aria-label="이전 페이지">
+                ‹
+            </button>
+            <div class="page-indicator" id="pageIndicator">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button class="nav-btn nav-next" id="nextBtn" aria-label="다음 페이지">
+                ›
+            </button>
+        </div>
+    </main>
+
+    <!-- YouTube 찬양 플레이어 (숨김) -->
+    <div id="youtube-player"
+        style="position: fixed; bottom: -1000px; left: -1000px; pointer-events: none; width: 200px; height: 200px;">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
