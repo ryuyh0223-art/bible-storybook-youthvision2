@@ -1,6 +1,6 @@
 // ===== 전역 변수 =====
 let currentPage = 0;
-const totalPages = 10;
+const totalPages = 11;
 let isMusicPlaying = false;
 
 // YouTube 동영상 ID (사용자 요청 찬양)
