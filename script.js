@@ -3,9 +3,8 @@ let currentPage = 0;
 const totalPages = 11;
 let isMusicPlaying = false;
 
-// YouTube 동영상 ID (사용자 요청 찬양)
-const YOUTUBE_VIDEO_ID = "aTqAUU6s6O0";
-
+// 오디오 플레이어
+const bgmPlayer = document.getElementById('bgm-player');
 
 // DOM 요소
 const imageSlides = document.querySelectorAll('.image-slide');
@@ -114,16 +113,17 @@ function updateNavigationButtons() {
 
 // ===== 찬양 재생/정지 =====
 function toggleMusic() {
-    const playerContainer = document.getElementById('youtube-player');
-
     if (isMusicPlaying) {
         // 찬양 정지
-        playerContainer.innerHTML = '';
+        bgmPlayer.pause();
         isMusicPlaying = false;
         musicToggle.classList.remove('playing');
     } else {
-        // 찬양 재생: 유튜브 iframe을 동적으로 생성하여 삽입 (브라우저 정책 우회를 위해 최소 크기 지정)
-        playerContainer.innerHTML = `<iframe width="200" height="200" src="https://www.youtube.com/embed/${YOUTUBE_VIDEO_ID}?autoplay=1&loop=1&playlist=${YOUTUBE_VIDEO_ID}&controls=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>`;
+        // 찬양 재생
+        bgmPlayer.play().catch(error => {
+            console.log("자동 재생이 차단되었거나 파일을 찾을 수 없습니다:", error);
+            alert("음악 파일을 재생할 수 없습니다. assets 폴더에 bgm.mp3 파일이 있는지 확인해주세요.");
+        });
         isMusicPlaying = true;
         musicToggle.classList.add('playing');
     }
